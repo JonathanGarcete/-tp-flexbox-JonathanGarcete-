@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>A toda página</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh; /* altura mínima del viewport */
+    }
+
+    .header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 24px; /* alto fijo */
+      background-color: #c94a38;
+      color: black;
+      font-size: 24px; /* mismo que el alto */
+      font-weight: bold;
+    }
+
+    .contenido {
+      display: flex;
+      flex: 1; /* ocupa el resto de la altura */
+    }
+
+    .columna {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 24px;
+      color: white;
+    }
+
+    .lateral-izquierdo {
+      flex: 1; /* 1 parte */
+      background-color: black;
+    }
+
+    .central {
+      flex: 2; /* 2 partes */
+      background-color: white;
+      color: black;
+    }
+
+    .lateral-derecho {
+      flex: 1; /* 1 parte */
+      background-color: black;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    Título de la página
+  </div>
+
+  <div class="contenido">
+    <div class="columna lateral-izquierdo">
+      Lateral izquierdo
+    </div>
+    <div class="columna central">
+      Zona central
+    </div>
+    <div class="columna lateral-derecho">
+      Lateral derecho
+    </div>
+  </div>
+
+</body>
+</html>

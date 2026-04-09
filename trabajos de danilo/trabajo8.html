@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Grupo de tarjetas</title>
+  <style>
+    body {
+      margin: 20px;
+      font-family: sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    .contenedor-cards {
+      display: flex;
+      justify-content: space-around; /* reparte espacio entre y a los lados */
+      align-items: stretch; /* todas misma altura */
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      width: 180px;
+      border: 1px solid #999;
+      background-color: white;
+    }
+
+    .card-header {
+      display: flex;
+      justify-content:center;
+      align-items: center;
+      height: 40px; /* alto fijo */
+      background-color: #333;
+      color: white;
+    }
+
+    .card-header h2 {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    .card-body {
+      flex: 1; /* ocupa el resto */
+      padding: 8px;
+      color: black;
+      font-size: 13px;
+    }
+
+    .card-footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 30px; /* alto fijo */
+      background-color: #999;
+      color: white;
+    }
+
+    .card-footer h4 {
+      margin: 0;
+      font-size: 13px;
+      font-weight: normal;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="contenedor-cards">
+    
+    <div class="card">
+      <div class="card-header">
+        <h2>Tarjeta izquierda</h2>
+      </div>
+      <div class="card-body">
+        Contenido del cuerpo<br>
+        Contenido del cuerpo<br>
+        Contenido del cuerpo
+      </div>
+      <div class="card-footer">
+        <h4>Pie</h4>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2>Tarjeta centro</h2>
+      </div>
+      <div class="card-body">
+        Contenido del cuerpo
+      </div>
+      <div class="card-footer">
+        <h4>Pie</h4>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2>Tarjeta derecha</h2>
+      </div>
+      <div class="card-body">
+        Contenido del cuerpo
+      </div>
+      <div class="card-footer">
+        <h4>Pie</h4>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

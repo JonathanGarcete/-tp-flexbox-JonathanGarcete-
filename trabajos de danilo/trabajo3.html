@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Bloques paralelos con flex</title>
+  <style>
+    body {
+      margin: 50px;
+      font-family: sans-serif;
+    }
+
+    ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      background-color: rgba(123, 198, 199, 0.8);
+    }
+
+    li {
+      flex: 1; /* todos ocupan el mismo ancho */
+      padding: 10px;
+      border-right: 1px solid rgba(0, 0, 0, 0.3); /* divisoria */
+      color: black;
+    }
+
+    li:last-child {
+      border-right: none;
+    }
+  </style>
+</head>
+<body>
+
+  <ul>
+    <li>Solo tengo una línea</li>
+    <li>Este texto ocupa algo más que el de al lado. Son dos líneas</li>
+    <li>Este es más largo que los otros dos y ocupa más líneas. Pero todos estos bloques tienen la misma altura y anchura, crecen o decotraen para repartise el ancho disponible</li>
+  </ul>
+
+</body>
+</html>

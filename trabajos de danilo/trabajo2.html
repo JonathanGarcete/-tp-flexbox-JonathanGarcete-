@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Menú vertical con flex</title>
+  <style>
+    body {
+      margin: 20px;
+      font-family: sans-serif;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      width: fit-content; /* el ancho lo marca el item más largo */
+      background-color: rgba(123, 198, 199, 0.8);
+    }
+
+    li {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2); /* línea divisoria */
+    }
+
+    li:last-child {
+      border-bottom: none; /* sin línea en el último */
+    }
+
+    li a {
+      display: block;
+      padding: 12px 25px;
+      text-decoration: none;
+      color: black;
+    }
+
+    li a:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Servicios</a></li>
+    <li><a href="#">Opciones</a></li>
+    <li><a href="#">Planes</a></li>
+    <li><a href="#">Contacto</a></li>
+  </ul>
+
+</body>
+</html>

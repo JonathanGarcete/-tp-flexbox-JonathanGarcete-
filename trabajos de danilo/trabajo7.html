@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Card con flexbox</title>
+  <style>
+    body {
+      margin: 20px;
+      font-family: sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+      height: 200px;
+      border: 1px solid #999;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* sombreado ligero */
+      background-color: white;
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #333;
+      color: white;
+      padding: 10px;
+    }
+
+    .card-header h2 {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .card-body {
+      flex: 1; /* ocupa el espacio disponible */
+      padding: 10px;
+      color: black;
+    }
+
+    .card-footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #999;
+      color: white;
+      padding: 10px;
+    }
+
+    .card-footer h4 {
+      margin: 0;
+      font-size: 14px;
+      font-weight: normal;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="card-header">
+      <h2>Tarjeta de presentación</h2>
+    </div>
+    <div class="card-body">
+      Contenido del cuerpo de la tarjeta
+    </div>
+    <div class="card-footer">
+      <h4>Pie de la tarjeta</h4>
+    </div>
+  </div>
+
+</body>
+</html>

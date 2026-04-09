@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Sidebar a la izquierda</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    .contenedor {
+      display: flex;
+      gap: 2px; /* separación entre bloques */
+      height: 100vh; /* alto total del viewport */
+    }
+
+    .sidebar {
+      flex: 1; /* 1 parte */
+      background-color: rgba(84, 181, 191, 1.0);
+      padding: 12px 24px; /* vertical 12px, lateral 24px */
+      color: black;
+    }
+
+    .contenido {
+      flex: 4; /* 4 partes (relación 1:4) */
+      background-color: rgba(193, 219, 210, 1.0);
+      padding: 12px 24px;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="contenedor">
+    <div class="sidebar">
+      contenido lateral
+    </div>
+    <div class="contenido">
+      Esto sería el contenido principal
+    </div>
+  </div>
+
+</body>
+</html>
